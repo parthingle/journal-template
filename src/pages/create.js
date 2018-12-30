@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout";
 import SimpleMDE from 'react-simplemde-editor';
 import "simplemde/dist/simplemde.min.css";
-
+import Button from "../components/button"
 export default () => {
     return (
         <Layout>
@@ -14,6 +14,7 @@ export default () => {
                 <SimpleMDE
                 />
             </div>
+            <Button val="Post">Post</Button>
         </Layout>
     )
 }
