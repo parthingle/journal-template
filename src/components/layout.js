@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import { Link } from "gatsby"
+import StickyFooter from 'react-sticky-footer';
 
 import { rhythm } from "../utils/typography"
 
@@ -23,7 +24,8 @@ export default ({ children }) => (
         `}
       >
         Home
-      </h3>
+      </h3
+      >
     </Link>
     <Link
       to={`/login`}
@@ -51,14 +53,6 @@ export default ({ children }) => (
         Post History
     </Link>
     <Link
-      to={`/file-stats`}
-      css={css`
-        float: right;
-        margin-right: 1rem;
-      `}>
-        File Stats
-    </Link>
-    <Link
     to={`/about/`}
     css={css`
       float: right;
@@ -68,5 +62,15 @@ export default ({ children }) => (
     </Link>
     
     {children}
+
+    <StickyFooter>
+      <Link 
+        to={`/file-stats`}
+        css={css`
+          float: right;
+          margin-top: 3rem;`}>
+        File Stats
+      </Link>
+    </StickyFooter>
   </div>
 )
