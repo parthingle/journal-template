@@ -18,5 +18,12 @@ module.exports = {
           pathToConfigModule: `src/utils/typography`,
         },
       },
+      {
+        resolve: `gatsby-source-firebase`,
+        options: {
+          credential: require("./lockbox-14828-firebase-adminsdk-irdae-4821770b00.json"),
+          databaseURL: "https://lockbox-14828.firebaseio.com"
+        }
+      }
     ],
   }
