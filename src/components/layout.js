@@ -24,8 +24,7 @@ export default ({ children }) => (
         `}
       >
         Home
-      </h3
-      >
+      </h3>
     </Link>
     <Link
       to={`/login`}
