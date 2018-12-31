@@ -6,6 +6,16 @@ import Button from "../components/button"
 import DateTime from 'react-datetime';
 import "../stylesheets/datetime.css"
 
+var mde;
+
+
+function sub() {
+    console.log("submitted!")
+    console.log(mde)
+}
+function handleChange(value) {
+    mde = value;
+}
 export default () => {
     return (
         <Layout>
@@ -18,9 +28,16 @@ export default () => {
             <br/>
             <div>
                 <SimpleMDE
+                onChange={handleChange}
+                options={{
+                    autofocus: false,
+                    spellChecker: true,
+                    
+                  }}
+                placeholder="Type here..."
                 />
             </div>
-            <Button val="Post">Post</Button>
+            <Button val="Post" onClick={sub}>Post</Button>
         </Layout>
     )
 }
