@@ -7,17 +7,17 @@ I made this to learn React and get some experience with front-end dev. You can u
 
 ### Instructions to edit
 
-Install gatsby client
+Install gatsby client <br/>
 `npm install -g gatsby-cli`
 
-clone this repo
-`git clone https://github.com/parthingle/journal-template.git`
-`cd journal-template`
+clone this repo<br/>
+`git clone https://github.com/parthingle/journal-template.git` <br/>
+`cd journal-template`<br/>
 
-install libraries
-`npm install`
+install libraries<br/>
+`npm install`<br/>
 
-launch server
-`gatsby develop`
+launch server<br/>
+`gatsby develop`<br/>
 
 and it will run on localhost:8000
